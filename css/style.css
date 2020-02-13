@@ -1,0 +1,42 @@
+.inline {
+    display:inline block;
+}
+
+.center-in {
+    text-align: center;
+}
+
+.right-in {
+    text-align: right;
+}
+
+.left-in {
+    text-align: left;
+}
+
+.white-text {
+    color:black;
+}
+
+body {
+    background-color: white;
+}
+
+.white-border {
+    border: 5px solid #ffffff;
+    height: 50px !important;
+}
+
+.gray-border {
+    border: 5px solid grey;
+    height: 50px !important;
+}
+
+.white-border-thin {
+    border: 2px solid #ffffff;
+    height: 28px !important;
+}
+
+td {
+    max-width: 700px;
+}
