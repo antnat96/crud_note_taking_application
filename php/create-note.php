@@ -43,8 +43,6 @@
 
     $conn->close();
 
-    var_dump($conn);
-
     echo $result;
 
 ?>
