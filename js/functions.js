@@ -76,8 +76,10 @@ $(document).ready(function(){
             },
             type: "POST",
         }).done(function(result){
+            console.log("Done adding note" + result);
             validateSuccess(result, "create");
         }).fail(function(result) {
+            console.log("Failed adding note " + result);
             window.alert("Something went wrong. Please try again later.");
             document.location.href = UrlBuilder("main.php");
         });
@@ -103,7 +105,9 @@ $(document).ready(function(){
     });
 
     function validateSuccess(result, action) {
+        console.log("Validating success");
         if (result != true && result != 1) {
+            console.log("result is not true and is not 1, result is " + result);
             window.alert("Something went wrong. Please try again later.");
             document.location.href = UrlBuilder("main.php");
         }
