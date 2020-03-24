@@ -1,7 +1,13 @@
 <?php 
-    $servername = "localhost";
-    $username = "anthony";
-    $password = "n7fHmx71j5eCrM0U";
+
+    if (!(isset($_SESSION['dbpw']))) {
+        die("Nope.");
+    }
+
+    session_start();
+    $servername = "aa14tla7xk15re7.cuaek3ju8uwd.us-east-1.rds.amazonaws.com";
+    $username = "antnat96";
+    $password = $_SESSION['dbpw'];
     $dbname = "notes";
     $idOfRowToDelete = $_POST['idOfRowToDelete'];
 

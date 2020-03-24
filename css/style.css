@@ -40,3 +40,16 @@ body {
 td {
     max-width: 700px;
 }
+
+.password-top-pad {
+    padding-top: 45px;
+}
+
+.no-top-marg {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
+#logout-button {
+    margin-top:10px;
+}

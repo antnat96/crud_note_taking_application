@@ -1,9 +1,14 @@
 <?php
+
+    if (!(isset($_SESSION['dbpw']))) {
+        die("Nope.");
+    }
+
     $notes = array();
 
-    $servername = "localhost";
-    $username = "anthony";
-    $password = "n7fHmx71j5eCrM0U";
+    $servername = "aa14tla7xk15re7.cuaek3ju8uwd.us-east-1.rds.amazonaws.com";
+    $username = "antnat96";
+    $password = $_SESSION['dbpw'];
     $dbname = "notes";
 
     // Create connection
