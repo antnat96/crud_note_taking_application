@@ -1,10 +1,10 @@
 <?php 
+    session_start();
 
     if (!(isset($_SESSION['dbpw']))) {
         die("Nope.");
     }
 
-    session_start();
     $servername = "aa14tla7xk15re7.cuaek3ju8uwd.us-east-1.rds.amazonaws.com";
     $username = "antnat96";
     $password = $_SESSION['dbpw'];
