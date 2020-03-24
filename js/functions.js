@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     function UrlBuilder(destination) {
         if (production) {
-            return location.protocol + "//" + location.hostname + "/" + location.pathname.split("/")[0] + "/" + destination;
+            return location.protocol + "//" + location.hostname + "/" + location.pathname.split("/")[0] + destination;
         }
         else {
             return location.protocol + "//" + location.hostname + "/" + location.pathname.split("/")[1] + "/" + destination;
